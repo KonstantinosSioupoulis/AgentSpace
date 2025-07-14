@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Assistant</title>
+  <style>
+    body {
+      background: #eaf0f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .chat-container {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      width: 420px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    .chat-header {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    gen-search-widget {
+      width: 100%;
+      min-height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">🤖 Virtual Assistant</div>
+
+    <!-- Always opened widget with your configId and other props -->
+    <gen-search-widget
+      configId="245eafbb-9538-49c7-bc01-1a6c6700cf8f"
+      location="eu"
+      anchorsTarget="_blank"
+      placeholder="Ask me anything about AI Applications"
+      alwaysOpened>
+    </gen-search-widget>
+  </div>
+
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+</body>
+</html>

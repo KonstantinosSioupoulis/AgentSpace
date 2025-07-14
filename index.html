@@ -11,9 +11,28 @@
       margin: 0;
       padding: 40px;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .intro-box {
+      background-color: #6c5ce7;
+      color: white;
+      border-radius: 12px;
+      padding: 20px 30px;
+      width: 500px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro-box h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .intro-box p {
+      margin: 10px 0 0;
+      line-height: 1.5;
     }
 
     .chat-box {
@@ -45,10 +64,17 @@
   </style>
 </head>
 <body>
-  <div class="chat-box">
-    <div class="chat-title">💬 Azure DevOps Wiki Helper</div>
 
-    <!-- Embedded widget (not fullscreen) -->
+  <!-- Intro Section -->
+  <div class="intro-box">
+    <h2>Welcome to the Azure DevOps Wiki Helper</h2>
+    <p>This assistant helps you quickly find and understand information related to your Azure DevOps Wikis. Just type your question below and let the assistant guide you!</p>
+  </div>
+
+  <!-- Chat Section -->
+  <div class="chat-box">
+    <div class="chat-title">💬 Ask Me Anything</div>
+
     <gen-search-widget
       configId="245eafbb-9538-49c7-bc01-1a6c6700cf8f"
       location="eu"
